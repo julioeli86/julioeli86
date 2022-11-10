@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Predictive</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">My Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="resume.html">My Resume</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/julioeli86" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">November 01, 2022</span>
+									<h2>Evaluating a Predictive Analytics Case</h2>
+									<p>Being able to detect sepsis in the early stages, “blood poisoning”, by developing machine learning and artificial intelligence prediction models (Anjali, 2021).</p>
+								</header>
+								<div class="image main"><img src="images/sepsis-002.jpg" alt="" /></div>
+								<p>The study used a total of 40,336 patients’ Electronic Health Records to build the models. The dataset records included values like age, gender, hospital admission time, vital signs, laboratory values, and ICU length of stay (Anjali, 2021).</p>
+								<p>The original dataset contained several values that are shown in Tables 1 & 2. The article mentions that missing values were filled with corresponding mean values from the dataset. The dataset was obtained by Kfold Cross-validation and SMOTE sampling (Anjali, 2021).</p>
+								<div class="image main"><img src="images/BAN-709-Mod-007-Table-001.jpg" alt="" /></div>
+								<div class="image main"><img src="images/BAN-709-Mod-007-Table-002.jpg" alt="" /></div>
+								<p>The dataset was used to determine which algorithm’s classifier was the most feasible. The predictive classes of the confusion matrix, True Positive, False Positive, False Negative, and True Negative, were used to calculate the following parameters following
+								defined formulas: Accuracy, Precision, Recall (Sensitivity), and F1-Score. In addition, a test set of the confusion matrix was provided for each of the respective models evaluated (Anjali, 2021).</p>
+								<p>The results obtained for the Multi-Layer Perceptron are provided below as an example:</p>
+							</section>
+							<!-- Preformatted Code -->
+							<h2>Preformatted</h2>
+							<p>For Multi-Layer Perceptron:		</p>
+							<pre><code>
+			
+accuracy: 0.9519736164072967
+recall score: 0.18036529680365296
+precision score: 0.42473118279569894
+f1 score: 0.2532051282051282
+test-set confusion matrix:
+
+[[9158			 107]
+[359			 79]]
+
+</code></pre>
+						<!-- Post -->
+						<section class="post">
+							
+							<p>The study was able to use and create the following machine learning algorithms model to test the dataset used in this study:</p>
+							<p><li>x• Multilayer Perceptron</li>
+								<li>K-Nearest Neighbor</li>
+								<li>Gaussian Naïve Bayes</li>
+								<li>Extra Tree Classifier</li>
+								<li>Adaboost Classifier</li>
+								<li>Linear Discriminant Analysis</li></p>
+							<p>All the machine learning classifier algorithms models were compared by plotting all the individuals’ results between each of the classifier models. As a result, a total of four plots were created where the corresponding axis for each plot is described below:</p>
+							<div class="image main"><img src="images/BAN-709-Mod-007-Table-003.jpg" alt="" /></div>
+							<p>The results provided that the Extra Tree Classifier (ETC) provided the best performance among all six classifiers. The ETC Classifier will be able to provide the best sepsis prediction if compared to the other models. The study also mentions that the Multilayer perceptron and Adaboost classifiers will provide the best prediction for large datasets. The use of Machine Learning and Artificial Intelligence algorithms to help recognize sepsis will provide hospitals and individuals with mechanisms to save lives and cut down financial expenses.</p>
+							<br />
+							<h2>References</h2>
+							<p><b>Anjali Kshirsagar</b> <i>Shubham More , Saurabh Kale , Rutuj Anturkar, Sushma Vispute,</i> 2021, An Application of Predictive Analytics for Early Detection of Sepsis: An Overview, INTERNATIONAL JOURNAL OF ENGINEERING RESEARCH & TECHNOLOGY (IJERT) Volume 10, Issue 01 (January 2021),</p>
+						</section>							
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						
+						<section class="split contact">
+							
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://github.com/julioeli86" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Desiderata</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
